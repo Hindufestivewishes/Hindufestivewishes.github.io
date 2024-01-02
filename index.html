@@ -821,4 +821,16 @@ var scroll = $(document).ready(function(){$curtainopen=!1,$(".rope").click(funct
     
 </body>
 </html>
-<img src="https://www.cutercounter.com/hits.php?id=huxoqoax&nd=6&style=1" border="0" alt="best free website hit counter">
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Check if the visitor count is already stored in local storage
+      var visitorCount = localStorage.getItem("visitorCount") || 0;
+
+      // Display the current visitor count
+      document.getElementById("visitorCount").innerText = "Visitors: " + visitorCount;
+
+      // Increment the visitor count
+      visitorCount++;
+    });
+  </script>
+  <p id="visitorCount">Loading...</p>
