@@ -815,3 +815,19 @@ var scroll = $(document).ready(function(){$curtainopen=!1,$(".rope").click(funct
     <center><iframe class="rumble" width="80%" height="auto" src="https://rumble.com/embed/v4223b6/?pub=39ezr9" frameborder="0" allowfullscreen></iframe></center>
 </body>
 </html>
+<p></p>
+<h1 style="font-size:10px;" id="count">0</h1>
+<p></p>
+<script type="text/javascript" charset="utf-8">
+    const countEl = document.getElementById('count');
+
+updateVisitCount();
+
+function updateVisitCount() {
+  fetch('https://api.countapi.xyz/update/perryfeinstein.com/8886648850?amount=1')
+  .then(res => res.json())
+  .then(res => {
+    countEl.innerHTML = res.value;
+  });
+}
+</script>
